@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>1</id>
+      <size>114</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2025-02-19 14:21:34.714703+00:00</created>
+      <updated>2025-02-19 14:30:05.338516+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>113</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>1</id>
+          <start>0</start>
+          <stop>113</stop>
+          <url>http://localhost:8080/api/jobs/1</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>roma</username>
+        <email>roman0810.r@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>Apple</name>
+          <color>#ddff33</color>
+          <type>mask</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Hurma</name>
+          <color>#ff6037</color>
+          <type>mask</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2025-02-19 14:40:11.701216+00:00</dumped>
+  </meta>
+  <image id="0" name="0.jpg" width="640" height="640">
+    <mask label="Apple" source="manual" occluded="0" rle="50, 10, 127, 14, 123, 27, 111, 33, 106, 43, 94, 49, 89, 56, 81, 60, 78, 63, 74, 67, 70, 70, 67, 73, 65, 75, 63, 76, 63, 78, 60, 80, 59, 81, 56, 84, 53, 87, 51, 89, 48, 92, 46, 94, 44, 96, 42, 98, 41, 98, 40, 100, 38, 102, 37, 103, 35, 104, 35, 105, 34, 106, 32, 107, 32, 108, 31, 108, 31, 108, 30, 109, 30, 109, 29, 111, 27, 112, 27, 112, 26, 114, 25, 114, 25, 114, 24, 115, 24, 115, 24, 115, 24, 116, 23, 116, 23, 116, 23, 117, 22, 117, 22, 118, 21, 118, 21, 118, 20, 120, 19, 120, 19, 120, 19, 120, 18, 122, 17, 122, 17, 122, 16, 123, 16, 123, 16, 124, 14, 125, 14, 125, 14, 126, 12, 128, 11, 128, 11, 127, 11, 128, 11, 128, 11, 128, 11, 128, 11, 129, 10, 129, 10, 129, 10, 129, 10, 129, 10, 129, 10, 130, 9, 130, 9, 130, 8, 132, 7, 132, 7, 132, 6, 134, 5, 134, 5, 134, 4, 135, 4, 135, 4, 135, 3, 136, 3, 136, 3, 136, 3, 137, 2, 137, 2, 137, 2, 137, 2, 137, 2, 137, 2, 138, 1, 138, 1, 138, 1, 138, 1, 138, 1, 138, 1, 138, 1, 832, 1, 138, 1, 138, 1, 138, 1, 138, 1, 138, 1, 138, 1, 834, 1, 138, 1, 138, 1, 138, 1, 138, 1, 138, 1, 138, 1, 138, 1, 138, 1, 138, 2, 137, 2, 137, 2, 137, 2, 137, 2, 136, 3, 136, 4, 135, 4, 134, 5, 134, 5, 134, 5, 134, 6, 133, 6, 133, 6, 133, 6, 133, 7, 132, 7, 132, 7, 132, 7, 132, 8, 131, 8, 130, 9, 130, 9, 130, 9, 129, 11, 128, 11, 127, 12, 127, 12, 126, 14, 124, 15, 124, 15, 123, 16, 122, 18, 120, 19, 119, 20, 119, 21, 118, 21, 118, 21, 117, 22, 117, 23, 116, 23, 115, 25, 114, 25, 113, 27, 111, 29, 110, 29, 109, 31, 107, 33, 105, 35, 103, 37, 101, 39, 100, 40, 98, 42, 96, 44, 95, 45, 93, 47, 91, 49, 89, 52, 86, 54, 83, 57, 81, 59, 78, 62, 74, 67, 68, 72, 48, 93, 44, 97, 40, 102, 35, 108, 28, 66" left="262" top="137" width="139" height="203" z_order="0">
+    </mask>
+  </image>
+  <image id="1" name="1.jpg" width="640" height="640">
+    <mask label="Apple" source="manual" occluded="0" rle="85, 6, 125, 19, 119, 23, 117, 25, 114, 28, 110, 32, 107, 34, 105, 37, 103, 39, 100, 43, 97, 46, 94, 49, 91, 51, 88, 54, 86, 55, 78, 64, 75, 66, 73, 69, 71, 70, 70, 71, 69, 72, 68, 74, 65, 76, 63, 78, 62, 79, 62, 80, 60, 81, 60, 82, 58, 83, 58, 84, 56, 85, 55, 87, 52, 89, 50, 92, 48, 93, 48, 93, 47, 95, 46, 95, 45, 96, 44, 98, 42, 99, 41, 100, 41, 101, 39, 102, 39, 102, 38, 104, 37, 104, 37, 105, 35, 106, 35, 106, 35, 107, 34, 107, 34, 107, 33, 108, 33, 109, 32, 109, 32, 110, 30, 111, 30, 112, 29, 112, 29, 113, 27, 114, 27, 114, 26, 116, 24, 117, 24, 117, 23, 119, 22, 119, 21, 120, 21, 121, 19, 122, 19, 122, 19, 122, 19, 123, 18, 123, 18, 124, 17, 124, 17, 125, 16, 125, 16, 125, 16, 125, 16, 125, 16, 126, 15, 126, 15, 126, 15, 127, 14, 127, 14, 127, 14, 127, 14, 128, 13, 128, 13, 128, 13, 128, 12, 130, 11, 130, 11, 130, 11, 130, 10, 132, 9, 132, 9, 132, 9, 132, 8, 133, 8, 134, 7, 134, 6, 136, 5, 136, 4, 137, 4, 137, 4, 137, 4, 137, 4, 137, 4, 137, 3, 138, 3, 138, 3, 138, 3, 138, 3, 138, 3, 138, 3, 138, 3, 138, 2, 139, 2, 140, 1, 140, 1, 140, 1, 281, 1, 140, 1, 140, 1, 139, 2, 139, 2, 138, 3, 138, 3, 138, 3, 138, 3, 138, 3, 138, 3, 138, 3, 138, 3, 138, 3, 139, 2, 139, 2, 139, 2, 139, 2, 139, 2, 139, 2, 139, 2, 139, 2, 139, 2, 139, 2, 138, 3, 138, 3, 137, 4, 137, 5, 136, 5, 135, 6, 135, 6, 135, 6, 135, 7, 133, 8, 133, 8, 133, 9, 131, 10, 131, 11, 130, 11, 130, 12, 129, 12, 129, 13, 128, 13, 128, 14, 127, 14, 126, 15, 125, 17, 124, 17, 123, 18, 122, 19, 121, 21, 119, 22, 119, 22, 118, 24, 116, 25, 116, 26, 114, 27, 114, 28, 112, 30, 111, 30, 111, 31, 110, 31, 109, 33, 108, 33, 108, 34, 106, 37, 104, 40, 99, 44, 94, 49, 91, 53, 87, 56, 84, 58, 82, 61, 80, 64, 76, 66, 74, 69, 72, 72, 68, 76, 65, 78, 62, 80, 60, 82, 57, 85, 53, 88, 50, 92, 45, 99, 15, 5, 10, 113, 11, 132, 7, 136, 4, 139, 2, 77" left="266" top="177" width="141" height="215" z_order="0">
+    </mask>
+  </image>
+  <image id="2" name="10.jpg" width="640" height="640">
+  </image>
+  <image id="3" name="100.jpg" width="640" height="640">
+  </image>
+  <image id="4" name="101.jpg" width="640" height="640">
+  </image>
+  <image id="5" name="102.jpg" width="640" height="640">
+  </image>
+  <image id="6" name="103.jpg" width="640" height="640">
+  </image>
+  <image id="7" name="104.jpg" width="640" height="640">
+  </image>
+  <image id="8" name="105.jpg" width="640" height="640">
+  </image>
+  <image id="9" name="106.jpg" width="640" height="640">
+  </image>
+  <image id="10" name="107.jpg" width="640" height="640">
+  </image>
+  <image id="11" name="108.jpg" width="640" height="640">
+  </image>
+  <image id="12" name="109.jpg" width="640" height="640">
+  </image>
+  <image id="13" name="11.jpg" width="640" height="640">
+  </image>
+  <image id="14" name="110.jpg" width="640" height="640">
+  </image>
+  <image id="15" name="111.jpg" width="640" height="640">
+  </image>
+  <image id="16" name="112.jpg" width="640" height="640">
+  </image>
+  <image id="17" name="113.jpg" width="640" height="640">
+  </image>
+  <image id="18" name="12.jpg" width="640" height="640">
+  </image>
+  <image id="19" name="13.jpg" width="640" height="640">
+  </image>
+  <image id="20" name="14.jpg" width="640" height="640">
+  </image>
+  <image id="21" name="15.jpg" width="640" height="640">
+  </image>
+  <image id="22" name="16.jpg" width="640" height="640">
+  </image>
+  <image id="23" name="17.jpg" width="640" height="640">
+  </image>
+  <image id="24" name="18.jpg" width="640" height="640">
+  </image>
+  <image id="25" name="19.jpg" width="640" height="640">
+  </image>
+  <image id="26" name="2.jpg" width="640" height="640">
+  </image>
+  <image id="27" name="20.jpg" width="640" height="640">
+  </image>
+  <image id="28" name="21.jpg" width="640" height="640">
+  </image>
+  <image id="29" name="22.jpg" width="640" height="640">
+  </image>
+  <image id="30" name="23.jpg" width="640" height="640">
+  </image>
+  <image id="31" name="24.jpg" width="640" height="640">
+  </image>
+  <image id="32" name="25.jpg" width="640" height="640">
+  </image>
+  <image id="33" name="26.jpg" width="640" height="640">
+  </image>
+  <image id="34" name="27.jpg" width="640" height="640">
+  </image>
+  <image id="35" name="28.jpg" width="640" height="640">
+  </image>
+  <image id="36" name="29.jpg" width="640" height="640">
+  </image>
+  <image id="37" name="3.jpg" width="640" height="640">
+  </image>
+  <image id="38" name="30.jpg" width="640" height="640">
+  </image>
+  <image id="39" name="31.jpg" width="640" height="640">
+  </image>
+  <image id="40" name="32.jpg" width="640" height="640">
+  </image>
+  <image id="41" name="33.jpg" width="640" height="640">
+  </image>
+  <image id="42" name="34.jpg" width="640" height="640">
+  </image>
+  <image id="43" name="35.jpg" width="640" height="640">
+  </image>
+  <image id="44" name="36.jpg" width="640" height="640">
+  </image>
+  <image id="45" name="37.jpg" width="640" height="640">
+  </image>
+  <image id="46" name="38.jpg" width="640" height="640">
+  </image>
+  <image id="47" name="39.jpg" width="640" height="640">
+  </image>
+  <image id="48" name="4.jpg" width="640" height="640">
+  </image>
+  <image id="49" name="40.jpg" width="640" height="640">
+  </image>
+  <image id="50" name="41.jpg" width="640" height="640">
+  </image>
+  <image id="51" name="42.jpg" width="640" height="640">
+  </image>
+  <image id="52" name="43.jpg" width="640" height="640">
+  </image>
+  <image id="53" name="44.jpg" width="640" height="640">
+  </image>
+  <image id="54" name="45.jpg" width="640" height="640">
+  </image>
+  <image id="55" name="46.jpg" width="640" height="640">
+  </image>
+  <image id="56" name="47.jpg" width="640" height="640">
+  </image>
+  <image id="57" name="48.jpg" width="640" height="640">
+  </image>
+  <image id="58" name="49.jpg" width="640" height="640">
+  </image>
+  <image id="59" name="5.jpg" width="640" height="640">
+  </image>
+  <image id="60" name="50.jpg" width="640" height="640">
+  </image>
+  <image id="61" name="51.jpg" width="640" height="640">
+  </image>
+  <image id="62" name="52.jpg" width="640" height="640">
+  </image>
+  <image id="63" name="53.jpg" width="640" height="640">
+  </image>
+  <image id="64" name="54.jpg" width="640" height="640">
+  </image>
+  <image id="65" name="55.jpg" width="640" height="640">
+  </image>
+  <image id="66" name="56.jpg" width="640" height="640">
+  </image>
+  <image id="67" name="57.jpg" width="640" height="640">
+  </image>
+  <image id="68" name="58.jpg" width="640" height="640">
+  </image>
+  <image id="69" name="59.jpg" width="640" height="640">
+  </image>
+  <image id="70" name="6.jpg" width="640" height="640">
+  </image>
+  <image id="71" name="60.jpg" width="640" height="640">
+  </image>
+  <image id="72" name="61.jpg" width="640" height="640">
+  </image>
+  <image id="73" name="62.jpg" width="640" height="640">
+  </image>
+  <image id="74" name="63.jpg" width="640" height="640">
+  </image>
+  <image id="75" name="64.jpg" width="640" height="640">
+  </image>
+  <image id="76" name="65.jpg" width="640" height="640">
+  </image>
+  <image id="77" name="66.jpg" width="640" height="640">
+  </image>
+  <image id="78" name="67.jpg" width="640" height="640">
+  </image>
+  <image id="79" name="68.jpg" width="640" height="640">
+  </image>
+  <image id="80" name="69.jpg" width="640" height="640">
+  </image>
+  <image id="81" name="7.jpg" width="640" height="640">
+  </image>
+  <image id="82" name="70.jpg" width="640" height="640">
+  </image>
+  <image id="83" name="71.jpg" width="640" height="640">
+  </image>
+  <image id="84" name="72.jpg" width="640" height="640">
+  </image>
+  <image id="85" name="73.jpg" width="640" height="640">
+  </image>
+  <image id="86" name="74.jpg" width="640" height="640">
+  </image>
+  <image id="87" name="75.jpg" width="640" height="640">
+  </image>
+  <image id="88" name="76.jpg" width="640" height="640">
+  </image>
+  <image id="89" name="77.jpg" width="640" height="640">
+  </image>
+  <image id="90" name="78.jpg" width="640" height="640">
+  </image>
+  <image id="91" name="79.jpg" width="640" height="640">
+  </image>
+  <image id="92" name="8.jpg" width="640" height="640">
+  </image>
+  <image id="93" name="80.jpg" width="640" height="640">
+  </image>
+  <image id="94" name="81.jpg" width="640" height="640">
+  </image>
+  <image id="95" name="82.jpg" width="640" height="640">
+  </image>
+  <image id="96" name="83.jpg" width="640" height="640">
+  </image>
+  <image id="97" name="84.jpg" width="640" height="640">
+  </image>
+  <image id="98" name="85.jpg" width="640" height="640">
+  </image>
+  <image id="99" name="86.jpg" width="640" height="640">
+  </image>
+  <image id="100" name="87.jpg" width="640" height="640">
+  </image>
+  <image id="101" name="88.jpg" width="640" height="640">
+  </image>
+  <image id="102" name="89.jpg" width="640" height="640">
+  </image>
+  <image id="103" name="9.jpg" width="640" height="640">
+  </image>
+  <image id="104" name="90.jpg" width="640" height="640">
+  </image>
+  <image id="105" name="91.jpg" width="640" height="640">
+  </image>
+  <image id="106" name="92.jpg" width="640" height="640">
+  </image>
+  <image id="107" name="93.jpg" width="640" height="640">
+  </image>
+  <image id="108" name="94.jpg" width="640" height="640">
+  </image>
+  <image id="109" name="95.jpg" width="640" height="640">
+  </image>
+  <image id="110" name="96.jpg" width="640" height="640">
+  </image>
+  <image id="111" name="97.jpg" width="640" height="640">
+  </image>
+  <image id="112" name="98.jpg" width="640" height="640">
+  </image>
+  <image id="113" name="99.jpg" width="640" height="640">
+  </image>
+</annotations>
