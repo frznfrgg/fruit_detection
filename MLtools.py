@@ -76,7 +76,15 @@ class ImageData(Dataset):
         image = image.swapaxes(0,2).swapaxes(1,2)
         
         return image/255.0, mask
-    
+
+    def get_name_label(self, index):
+        label_object = self.mask_raw[index]
+        image_name = label_object.get('name')
+        mask_data = label_object.find('mask')
+        label = mask_data.get('label')
+        return image_name, label
+
+
     @staticmethod
     def draw_appled_mask(image, mask, mask_koef=0.3):
         if type(image) is torch.Tensor:
