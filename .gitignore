@@ -4,3 +4,6 @@
 .ipynb_checkpoints/my_segmentstion-checkpoint.ipynb
 .ipynb_checkpoints/loader-checkpoint.ipynb
 .ipynb_checkpoints/segment-checkpoint.ipynb
+*.jpg
+.ipynb_checkpoints/size-checkpoint.ipynb
+SC_model1.pth
