@@ -7,3 +7,4 @@
 *.jpg
 .ipynb_checkpoints/size-checkpoint.ipynb
 SC_model1.pth
+*.csv
