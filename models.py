@@ -60,11 +60,12 @@ class СlassifierHead(nn.Module):
 class ClsTrainer(СlassifierHead):
     def __init__(self,
                 lr,
+                gamma,
                 criterion):
         super(ClsTrainer, self).__init__()
 
-        self.lr = lr
-        self.optim = torch.optim.Adam(super().parameters(), lr=self.lr)
+        self.optim = torch.optim.Adam(super().parameters(), lr=lr)
+        self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.optim, gamma=gamma)
         self.criterion = criterion
         self.epo_train_losses = []
         self.epo_val_losses = []
@@ -97,6 +98,8 @@ class ClsTrainer(СlassifierHead):
         return output
 
     def epoch_end(self):
+        self.scheduler.step()
+
         self.train_losses.append(np.mean(self.epo_train_losses))
         self.val_losses.append(np.mean(self.epo_val_losses))
 
@@ -143,11 +146,12 @@ class RegressorHead(nn.Module):
 class RgsTrainer(RegressorHead):
     def __init__(self,
                 lr,
+                gamma,
                 criterion):
         super(RgsTrainer, self).__init__()
 
-        self.lr = lr
-        self.optim = torch.optim.Adam(super().parameters(), lr=self.lr)
+        self.optim = torch.optim.Adam(super().parameters(), lr=lr)
+        self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.optim, gamma=gamma)
         self.criterion = criterion
         self.epo_train_losses = []
         self.epo_val_losses = []
@@ -182,6 +186,8 @@ class RgsTrainer(RegressorHead):
         return output
 
     def epoch_end(self):
+        self.scheduler.step()
+
         self.train_losses.append(np.mean(self.epo_train_losses))
         self.val_losses.append(np.mean(self.epo_val_losses))
 
@@ -244,11 +250,12 @@ class SegmentHead(nn.Module):
 class SgmTrainer(SegmentHead):
     def __init__(self,
                 lr,
+                gamma,
                 criterion):
         super(SgmTrainer, self).__init__()
 
-        self.lr = lr
-        self.optim = torch.optim.Adam(super().parameters(), lr=self.lr)
+        self.optim = torch.optim.Adam(super().parameters(), lr=lr)
+        self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.optim, gamma=gamma)
         self.criterion = criterion
         self.epo_train_losses = []
         self.epo_val_losses = []
@@ -281,6 +288,8 @@ class SgmTrainer(SegmentHead):
         return output
 
     def epoch_end(self):
+        self.scheduler.step()
+
         self.train_losses.append(np.mean(self.epo_train_losses))
         self.val_losses.append(np.mean(self.epo_val_losses))
 
