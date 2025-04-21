@@ -197,12 +197,13 @@ class RgsTrainer(RegressorHead):
 
 # Сегментатор
 class SegmentHead(nn.Module):
-    def __init__(self):
+    def __init__(self, in_channels=512):
         super(SegmentHead, self).__init__()
         self.relu = nn.LeakyReLU()
         self.sigmoid = nn.Sigmoid()
 
-        self.conv0 = self.set_conv_block(512, 256)
+
+        self.conv0 = self.set_conv_block(in_channels, 256)
 
         self.conv1 = nn.ConvTranspose2d(256, 128, kernel_size=3, stride=2)
         self.BN1 = nn.BatchNorm2d(128, momentum = 0.8)
@@ -251,8 +252,9 @@ class SgmTrainer(SegmentHead):
     def __init__(self,
                 lr,
                 gamma,
-                criterion):
-        super(SgmTrainer, self).__init__()
+                criterion,
+                in_channels = 512):
+        super(SgmTrainer, self).__init__(in_channels)
 
         self.optim = torch.optim.Adam(super().parameters(), lr=lr)
         self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.optim, gamma=gamma)
