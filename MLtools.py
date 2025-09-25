@@ -7,13 +7,23 @@ from torch.utils.data import Dataset
 from bs4 import BeautifulSoup
 import glob
 import torch.nn as nn
+from torchvision.io import read_image
 
 class ImageData(Dataset):
-    def __init__(self, image_folder, xml_path):
+    def __init__(self, image_folder, xml_path, label_mod=False):
         """
         image_folder - путь к директории с фотографиями
         xml_path - путь к фалу с разметками
         """
+        self.label_mod = label_mod
+        self.classes = {
+            'Apple': 0,
+            'Hurma': 1,
+            'Orange': 2,
+            'Pear': 3,
+            'Kiwi': 4,
+            'Tangerine': 5
+        }
         
         with open(xml_path, 'r') as f:
             data = f.read()
@@ -70,19 +80,28 @@ class ImageData(Dataset):
             
     
     def __getitem__(self, index):
-        mask, name = self._extract_mask(index)
-        
-        image = imageio.imread(f'{self.image_folder}/{name}')
-        image = image.swapaxes(0,2).swapaxes(1,2)
-        
-        return image/255.0, mask
+        if self.label_mod:
+            return self.get_name_label(index)
+        else:
+            mask, name = self._extract_mask(index)
+
+            image = imageio.imread(f'{self.image_folder}/{name}')
+            image = image.swapaxes(0,2).swapaxes(1,2)
+
+            return image/255.0, mask
 
     def get_name_label(self, index):
         label_object = self.mask_raw[index]
         image_name = label_object.get('name')
+
+        image = read_image(f"{self.image_folder}/{image_name}")/255.0
+
         mask_data = label_object.find('mask')
         label = mask_data.get('label')
-        return image_name, label
+
+        ind_label = self.classes[label]
+        one_hot_label = torch.nn.functional.one_hot(torch.tensor([ind_label]), num_classes=len(self.classes))
+        return image, one_hot_label
 
 
     @staticmethod
