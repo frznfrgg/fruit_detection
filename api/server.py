@@ -1,22 +1,35 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
+from fastapi.responses import JSONResponse
+import base64
+from io import BytesIO
+from PIL import Image
 import uvicorn
-from fastapi.responses import Response
+import os
 
-# Создаём приложение FastAPI
 app = FastAPI()
-
 
 @app.get("/status/")
 async def get_status():
     status = {"status": "running"}
     return status
 
-@app.get("/shot")
-def get_image():
-    with open("static.png", "rb") as f:
-        image_data = f.read()
-    return Response(content=image_data, media_type="image/png")
+@app.get("/get_last")
+def get_images_base64():
+    image_paths = ["static.png", "static.png"]
+    images_b64 = []
 
+    for path in image_paths:
+        with open(path, "rb") as f:
+            encoded = base64.b64encode(f.read()).decode('utf-8')
+        images_b64.append({
+            "data": f"data:image/png;base64,{encoded}"
+        })
 
-# Запуск сервера с явным указанием хоста и порта
+    response_data = {
+        "ready": True,
+        "images": images_b64
+    }
+
+    return JSONResponse(content=response_data)
+
 uvicorn.run(app, host="127.0.0.1", port=8001)
